@@ -1,0 +1,26 @@
+conf t
+host R4
+ip domain-name r4.lab
+crypto key gen rsa mod 2048
+ip ssh v 2
+user cisco4 pr 15 secret cisco4
+line vty 0 4
+transport input ssh
+int g0/2
+ip add 172.16.6.2 255.255.255.252
+no sh
+int g0/3
+ip add 192.168.2.1 255.255.255.0
+no sh
+int l0
+ip add 4.4.4.4 255.255.255.255
+exit
+ip dhcp pool clientB
+network 192.168.2.0 /24
+default 192.168.2.1
+exit
+ip dhcp exclude 192.168.2.1
+exit
+
+
+
