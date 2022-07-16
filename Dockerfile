@@ -1,3 +1,12 @@
-FROM ubuntu:latest
-RUN apt update && \
-    apt install nano vim openssh-client openssh-server dnsutils iputils-ping traceroute nmap net-tools yersinia -y
+FROM alpine
+RUN apk update 
+RUN apk add nmap \
+        bind-tools \
+        net-tools \
+        traceroute \
+        iputils \
+        openssh
+
+LABEL created_by=mueherizky \ 
+      GitHub_Link=https://www.github.com/mueherizky
+
