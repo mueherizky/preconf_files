@@ -5,7 +5,8 @@ RUN apk add nmap \
         net-tools \
         traceroute \
         iputils \
-        openssh
+        openssh \
+        vim
 
 LABEL created_by=mueherizky \ 
       GitHub_Link=https://www.github.com/mueherizky
