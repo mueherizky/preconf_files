@@ -1,0 +1,26 @@
+Nexus 9000v Host : sandbox-nxos-1.cisco.com
+SSH Port: 22
+NETCONF Port: 830
+NXAPI Ports: 80 & 443 
+RESTCONF Port : 443 
+Username: admin
+Password: Admin_1234!
+
+
+
+IOS XRv 9000 Host:	sandbox-iosxr-1.cisco.com
+SSH Port:	22
+NETCONF Port:	830
+XR bash Port:	57722
+gRPC Port:	57777
+Username: admin
+Password: C1sco12345
+
+
+
+CSR1000V Host: sandbox-iosxe-recomm-1.cisco.com
+SSH Port: 22
+NETCONF Port: 830
+RESTCONF Ports: 443 
+Username: developer
+Password: C1sco12345
