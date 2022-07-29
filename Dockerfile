@@ -6,7 +6,12 @@ RUN apk add --no-cache nmap \
                       traceroute \
                       iputils \
                       openssh \
-                      vim
+                      vim \
+                      tftp-hpa \
+                      curl
+EXPOSE 69/udp
+EXPOSE 22
+CMD /bin/sh
 
 LABEL created_by=mueherizky \ 
       GitHub_Link=https://www.github.com/mueherizky
